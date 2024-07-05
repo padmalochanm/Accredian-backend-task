@@ -9,7 +9,7 @@ import cors from "cors";
 const app = express();
 dotenv.config();
 const PORT = process.env.PORT || 5000;
-const prisma = new PrismaClient();
+export const prisma = new PrismaClient();
 const saltRounds = 10;
 const email = process.env.EMAIL;
 const password = process.env.PASSWORD;
